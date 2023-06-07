@@ -1,0 +1,32 @@
+@use 'global/index' as g;
+
+.footer {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.wrap-text {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  p {
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  p:nth-of-type(3) {
+    padding-top: 10px;
+  }
+}
+
+.copy {
+  text-align: center;
+  font-size: 8px;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translate(-50%);
+}

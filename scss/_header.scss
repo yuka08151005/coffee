@@ -1,0 +1,48 @@
+@use 'global/index' as g;
+
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/main.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 20px;
+
+  .logo {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
+  }
+
+}
+
+.nav {
+  position: absolute;
+  right: 50px;
+  width: 250px;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    .list a {
+      font-weight: bolder;
+      color: aliceblue;
+      text-shadow: 1px 1px 3px #393a39;
+      font-size: 14px;
+      transition:  ease .3s;
+    }
+    .list a:hover {
+      color: #E03131;
+    }
+    } //nav-inner
+  } //nav
+
+  

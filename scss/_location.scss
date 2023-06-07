@@ -1,0 +1,50 @@
+@use 'global/index' as g;
+
+.location-img {
+  position: relative;
+  background-image: url(img/location.jpg);
+  width: 100%;
+  height: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  @include g.mq(tab) {
+    height: 300px;
+    margin-bottom: 100px;
+  }
+}
+
+.loc-wrap {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.loc-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 70px;
+  padding: 30px 0 10px;
+  display: inline-block;
+  border-bottom: 3px solid #E03131;
+  @include g.mq(tab) {
+    font-size: 40px;
+    padding: 40px 0 10px;
+    border-bottom: 5px solid #E03131;
+  }
+}
+
+.loc-map {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  @include g.mq(tab) {
+    width: 95%;
+  }
+}
+
+
+  iframe {
+    width: 100%;
+    max-width: 1200px;
+    filter: grayscale(100%);
+}
